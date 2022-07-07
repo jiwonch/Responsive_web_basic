@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            #wrap {
+                width: 100%;
+                margin: 0 auto;
+                background-color: #eee;
+            }
+
+            header {
+                width: 100%;
+                height: 100px;
+                background-color: gold;
+            }
+
+            nav {
+                width: 100%;
+                height: 150px;
+                background-color: #eee;
+                float: left;
+            }
+
+            nav li {
+                width: 100%;
+                height: 30px;
+                float: left;
+                line-height: 30px;
+                margin: 0;
+                text-align: center;
+            }
+
+            nav li:nth-of-type(2n) {
+                background-color: red;
+            }
+
+            #slider {
+                width: 100%;
+                height: 440px;
+                background-color: pink;
+            }
+
+            #container{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: aquamarine;
+            }
+
+            article {
+                width: 95%;
+                height: 280px;
+                margin: 2%;
+                background-color: gray;
+            }
+
+            footer {
+                width: 100%;
+                height: 100px;
+                background-color: cyan;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            #wrap {
+                width: 100%;
+                margin: a auto;
+                background-color: #eee;
+            }
+
+            header {
+                width: 100%;
+                height: 100px;
+                background-color: gold;
+            }
+
+            nav {
+                width: 100%;
+                height: 30px;
+                background-color: #eee;
+                float: left;
+            }
+
+            nav li {
+                width: 20%;
+                height: 30px;
+                margin: 0;
+                float: left;
+                line-height: 30px;
+                text-align: center;
+            }
+
+            nav li:nth-of-type(2n) {
+                background-color: red;
+            }
+
+            #slider {
+                width: 100%;
+                height: 440px;
+                background-color: pink;
+            }
+
+            #container{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                background-color: aquamarine;
+            }
+
+            article {
+                width: 46%;
+                height: 280px;
+                float: left;
+                margin: 2%;
+                background-color: gray;
+            }
+
+            footer {
+                width: 100%;
+                height: 100px;
+                float: left;
+                background-color: cyan;
+            }
+        }
+
+        @media screen and (min-width: 1100px) {
+            #wrap {
+                width: 1000px;
+                margin: 0 auto;
+                background-color: #eee;
+            }
+
+            header {
+                width: 100%;
+                height: 100px;
+                background-color: gold;
+            }
+
+            nav {
+                width: 100%;
+                height: 30px;
+                background-color: #eee;
+                float: left;
+            }
+
+            nav li {
+                width: 20%;
+                height: 30px;
+                float: left;
+                line-height: 30px;
+                margin: 0;
+                text-align: center;
+            }
+
+            nav li:nth-of-type(2n) {
+                background-color: blue;
+            }
+
+            #slider {
+                width: 100%;
+                height: 440px;
+                background-color: darkcyan;
+            }
+
+            #container{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                background-color: aquamarine;
+            }
+
+            article {
+                width: 21%;
+                float: left;
+                height: 280px;
+                background-color: lightslategray;
+            }
+
+            footer {
+                width: 100%;
+                height: 100px;
+                background-color: antiquewhite;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <nav>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </nav>
+
+        <div id="slider"></div>
+
+        <div id="container">
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </div>
+
+        <footer></footer>
+    </div>
+</body>
+
+</html>
